@@ -8,6 +8,7 @@ Run this:
 
 ```sh
 npm ci # or use the more traditional `npm install`
+npm run eyes:setup
 ```
 
 ## How to run the Selenium Tests

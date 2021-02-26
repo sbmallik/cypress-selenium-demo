@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "eyes:setup": "eyes-setup",
     "selenium": "mocha --no-timeouts --exit 'selenium/*.js'",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open"
