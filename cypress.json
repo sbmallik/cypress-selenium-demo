@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://tangent-development.indystar.com",
+  "pageLoadTimeout": 15000,
+  "viewportHeight": 960,
+  "viewportWidth": 1280,
+  "chromeWebSecurity": false
+}
