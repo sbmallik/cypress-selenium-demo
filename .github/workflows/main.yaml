@@ -33,6 +33,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Update Applitools batch status 
-        uses: wei/curl@v1.1.1
+        uses: wei/curl@v1
         with:
           args: -d "" -X POST ${{ secrets.APPLITOOLS_SERVER_URL }}/api/externals/github/servers/github.com/commit/${{ github.sha }}/complete?apiKey=${{ secrets.APPLITOOLS_API_KEY }}
