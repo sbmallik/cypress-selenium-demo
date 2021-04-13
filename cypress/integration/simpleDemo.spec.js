@@ -5,10 +5,7 @@ describe('A simple demo', () => {
     cy.visit('/');
   });
   beforeEach(() => {
-    cy.eyesOpen({
-      appName: 'Demo App',
-      testName: 'Ultrafast grid demo'
-    });
+    cy.eyesOpen();
   });
   afterEach(() => {
     cy.eyesClose();
