@@ -2,7 +2,7 @@
 
 describe('A simple demo', () => {
   before(() => {
-    cy.visit('https://demo.applitools.com');
+    cy.visit('/');
   });
   beforeEach(() => {
     cy.eyesOpen({
