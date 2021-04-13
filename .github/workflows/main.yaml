@@ -35,4 +35,4 @@ jobs:
       - name: Update Applitools batch status 
         uses: wei/curl@v1.1.1
         with:
-          args: -d "" -X POST ${{ secrets.APPLITOOLS_SERVER_URL }}/api/externals/github/servers/github.com/commit/${{ env.APPLITOOLS_BATCH_ID }}/complete?apiKey=${{ secrets.APPLITOOLS_API_KEY }}
+          args: -d "" -X POST https://gannetteyesapi.applitools.com/api/externals/github/servers/github.com/commit/${{ env.APPLITOOLS_BATCH_ID }}/complete?apiKey=${{ secrets.APPLITOOLS_API_KEY }}
