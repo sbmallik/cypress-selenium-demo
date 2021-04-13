@@ -1,5 +1,4 @@
 {
-  "baseUrl": "https://demo.applitools.com",
   "pageLoadTimeout": 15000,
   "viewportHeight": 960,
   "viewportWidth": 1280,

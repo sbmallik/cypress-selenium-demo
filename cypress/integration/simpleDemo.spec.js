@@ -2,10 +2,13 @@
   
 describe('A simple demo', () => {
   before(() => {
-    cy.visit('/');
+    cy.visit('https://demo.applitools.com');
   });
   beforeEach(() => {
-    cy.eyesOpen();
+    cy.eyesOpen({
+      appName: 'Demo App',
+      testName: 'Ultrafast grid demo'
+    });
   });
   afterEach(() => {
     cy.eyesClose();
