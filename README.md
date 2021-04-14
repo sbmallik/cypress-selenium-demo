@@ -1,3 +1,5 @@
+![](https://github.com/sbmallik/cypress-selenium-demo/actions/workflows/main.yaml/badge.svg?event=push)
+
 # Cypress vs Selenium
 
 Companion code for "Cypress vs Selenium WebDriver: Better, or just different?" talk
