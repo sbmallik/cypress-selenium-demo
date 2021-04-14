@@ -3,8 +3,9 @@ module.exports = {
   appName: 'cypress-vs-selenium',
   showLogs: false,
   batchName: 'cypress-vs-selenium',
+  batchId: process.env.APPLITOOLS_BATCH_ID,
   apiKey: process.env.APPLITOOLS_API_KEY,
-  serverUrl: 'https://gannetteyesapi.applitools.com',
+  serverUrl: process.env.APPLITOOLS_SERVER_URL,
   matchLevel: 'Strict',
   concurrency: 3,
   browser: [

@@ -1,0 +1,22 @@
+name: 'Notify Applitools'
+description: 'Notify applitools about batch completion.'
+inputs:
+  batch-id:
+    description: 'id of the test batch'
+    required: true
+  api-key:
+    description: 'API key for Applitools end point'
+    required: true
+  applitools-server-url:
+    description: 'Applitools test manager base URL'
+    required: true
+outputs:
+  response:
+    description: 'The response of the cURL command'
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.batch-id }}
+    - ${{ inputs.api-key }}
+    - ${{ inputs.applitools-server-url }}
