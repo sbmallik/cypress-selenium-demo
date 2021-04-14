@@ -9,14 +9,13 @@ inputs:
     required: true
   applitools-server-url:
     description: 'Applitools test manager base URL'
-    required: false
-    default: $APPLITOOLS_SERVER_URL
+    required: true
 outputs:
   response:
     description: 'The response of the cURL command'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: docker
+  image: Dockerfile
   args:
     - ${{ inputs.batch-id }}
     - ${{ inputs.api-key }}
