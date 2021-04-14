@@ -5,7 +5,7 @@ on:
     types: [opened, edited, reopened, synchronize]
   push:
     branches:
-      - master
+      - '**'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -47,4 +47,4 @@ jobs:
           api-key: ${{ env.APPLITOOLS_API_KEY }}
           applitools-server-url: ${{ env.APPLITOOLS_SERVER_URL }}
       - name: Get the Applitools response
-        run: if [[ ${{ steps.notify.outputs.response }} == '200' ]]; then echo "HTTP 200 OK received"; else echo "Error code received." > /dev/stderr; fi
+        run: if [[ ${{ steps.notify.outputs.response }} == '200' ]]; then echo "HTTP 200 OK received"; else echo "Error code received."; exit 1; fi
