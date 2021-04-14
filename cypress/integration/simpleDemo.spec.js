@@ -11,14 +11,8 @@ describe('A simple demo', () => {
     cy.eyesClose();
   });
   it('Applitools visual grid', () => {
-    cy.eyesCheckWindow({
-      tag: 'Startup window',
-      target: 'window',
-      fully: true
-    });
     cy.get('#log-in').click()
-    cy.wait(3000)
-      .eyesCheckWindow({
+    cy.eyesCheckWindow({
       tag: 'App window',
       target: 'window',
       fully: true
