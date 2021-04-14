@@ -45,5 +45,6 @@ jobs:
         with:
           batch-id: ${{ env.APPLITOOLS_BATCH_ID }}
           api-key: ${{ env.APPLITOOLS_API_KEY }}
+          applitools-server-url: ${{ env.APPLITOOLS_SERVER_URL }}
       - name: Get the Applitools response
         run: if [[ ${{ steps.notify.outputs.response }} == '200' ]]; then echo "HTTP 200 OK received"; else echo "Error code received." > /dev/stderr; fi
