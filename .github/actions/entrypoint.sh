@@ -1,7 +1,5 @@
 #!/bin/sh
 
-echo "About to notify batch run completion to Applitools server."
-
 statusCode=$(curl -w '%{http_code}' -X POST \
   -H 'Content-Type:application/json' \
   -d '{"serverId":"github.com","commitSha":"'$1'"}' \
