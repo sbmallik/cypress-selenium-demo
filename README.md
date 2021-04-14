@@ -1,4 +1,4 @@
-![](https://github.com/sbmallik/cypress-selenium-demo/workflows/Run%20tests/badge.svg?event=push)
+![](https://github.com/sbmallik/cypress-selenium-demo/workflows/main/badge.svg?event=push)
 
 # Cypress vs Selenium
 
