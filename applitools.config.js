@@ -5,7 +5,7 @@ module.exports = {
   batchName: 'cypress-vs-selenium',
   batchId: process.env.APPLITOOLS_BATCH_ID,
   apiKey: process.env.APPLITOOLS_API_KEY,
-  serverUrl: process.env.APPLITOOLS_API_KEY,
+  serverUrl: process.env.APPLITOOLS_SERVER_URL,
   matchLevel: 'Strict',
   concurrency: 3,
   browser: [
