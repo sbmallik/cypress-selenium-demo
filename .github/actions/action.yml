@@ -10,7 +10,7 @@ inputs:
   applitools-server-url:
     description: 'Applitools test manager base URL'
     required: false
-    default: ${{ env.APPLITOOLS_SERVER_URL }}
+    default: $APPLITOOLS_SERVER_URL
 outputs:
   response:
     description: 'The response of the cURL command'
