@@ -35,6 +35,7 @@ steps:
       batch-id: ${{ env.APPLITOOLS_BATCH_ID }}
       api-key: ${{ env.APPLITOOLS_API_KEY }}
       applitools-server-url: ${{ env.APPLITOOLS_SERVER_URL }}
+  # Display the output of the previous step
   - run: echo "The HTTP response code = ${{ steps.notify.outputs.response }}"
 ```
 
