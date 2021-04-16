@@ -8,6 +8,7 @@ describe('todo actions', () => {
     cy.get('.new-todo').type('Clean room{enter}')
   })
 
+  // comment
   it('should add a new todo to the list', () => {
     cy.get('label').should('have.text', 'Clean room')
     cy.get('.toggle').should('not.be.checked')
