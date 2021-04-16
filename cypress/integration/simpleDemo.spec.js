@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
 
+// New visual test
 describe('A simple demo', () => {
   before(() => {
     cy.visit('/');
